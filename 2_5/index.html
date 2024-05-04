@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+  $(function(){
+    // ここに処理を記述
+    $('#button').on('click',function() {
+      let S = $('#value').val();
+      // alert(S)
+      if(S === '1') {
+        //赤
+        $('#box').css('background-color', 'red')
+      } else if (S === '2') {
+        //黄緑
+        $('#box').css('background-color', 'yellowgreen')
+      } else if (S === '3') {
+        //青
+        $('#box').css('background-color', 'blue')
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
