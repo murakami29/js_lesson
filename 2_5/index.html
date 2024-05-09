@@ -8,15 +8,15 @@
   $(function(){
     // ここに処理を記述
     $('#button').on('click',function() {
-      let S = $('#value').val();
+      let value = $('#value').val();
       // alert(S)
-      if(S === '1') {
+      if(value === '1') {
         //赤
         $('#box').css('background-color', 'red')
-      } else if (S === '2') {
+      } else if (value === '2') {
         //黄緑
         $('#box').css('background-color', 'yellowgreen')
-      } else if (S === '3') {
+      } else if (value === '3') {
         //青
         $('#box').css('background-color', 'blue')
       }
